@@ -1,4 +1,4 @@
-/* eslint-disable class-methods-use-this */
+ /* eslint-disable class-methods-use-this */
 class LinkedList {
   constructor() {
     this.head = null;
@@ -42,6 +42,14 @@ class LinkedList {
     }
     return false;
   }
+  /* teacher code
+  const checkNode = (node, criterion) => {
+    if (node === null) return false;
+    if (node.value === criterion) return true;
+    return checkNode(node.next, criterion);
+
+  };
+  */
 }
 
 module.exports = LinkedList;
